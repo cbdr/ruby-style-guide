@@ -1744,7 +1744,7 @@ Translations of the guide are available in the following languages:
   end
   ```
 
-* Don't Use comment tags
+* Don't use comment tags. If something needs doing, either do it, or make a card for it.
 
 
 * ~~Use `TODO` to note missing features or functionality that should be
