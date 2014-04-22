@@ -1744,23 +1744,26 @@ Translations of the guide are available in the following languages:
   end
   ```
 
-* Use `TODO` to note missing features or functionality that should be
-  added at a later date.
+* Don't Use comment tags
 
-* Use `FIXME` to note broken code that needs to be fixed.
 
-* Use `OPTIMIZE` to note slow or inefficient code that may cause
-  performance problems.
+* ~~Use `TODO` to note missing features or functionality that should be
+  added at a later date.~~
 
-* Use `HACK` to note code smells where questionable coding practices
-  were used and should be refactored away.
+* ~~Use `FIXME` to note broken code that needs to be fixed.~~
 
-* Use `REVIEW` to note anything that should be looked at to confirm it
+* ~~Use `OPTIMIZE` to note slow or inefficient code that may cause
+  performance problems.~~
+
+* ~~Use `HACK` to note code smells where questionable coding practices
+  were used and should be refactored away.~~
+
+* ~~Use `REVIEW` to note anything that should be looked at to confirm it
   is working as intended. For example: `REVIEW: Are we sure this is how the
-  client does X currently?`
+  client does X currently?`~~
 
-* Use other custom annotation keywords if it feels appropriate, but be
-  sure to document them in your project's `README` or similar.
+* ~~Use other custom annotation keywords if it feels appropriate, but be
+  sure to document them in your project's `README` or similar.~~
 
 ## Classes & Modules
 
