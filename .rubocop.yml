@@ -4,3 +4,6 @@ Encoding:
 
 LineLength:
   Max: 120
+
+CommentAnnotation:
+  Enabled: false
