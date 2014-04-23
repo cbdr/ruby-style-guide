@@ -1744,7 +1744,7 @@ Translations of the guide are available in the following languages:
   end
   ```
 
-* Don't use comment tags. If something needs doing, either do it, or make a card for it.
+* Don't use comment tags. If something needs doing, either do it, or [make a card](https://careerbuilder.mingle.thoughtworks.com/projects/mobile_off_platform/cards/new?properties[type]=Story) for it.
 
 
 * ~~Use `TODO` to note missing features or functionality that should be
