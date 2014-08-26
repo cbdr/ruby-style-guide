@@ -215,15 +215,13 @@ Translations of the guide are available in the following languages:
   ```Ruby
   # good - space after { and before }
   { one: 1, two: 2 }
-
-  # good - no space after { and before }
-  {one: 1, two: 2}
+  
+  #bad - multi-line split
+  {
+    one: 1,
+    two: 2
+  }
   ```
-
-  The first variant is slightly more readable (and arguably more
-  popular in the Ruby community in general). The second variant has
-  the advantage of adding visual difference between block and hash
-  literals. Whichever one you pick - apply it consistently.
 
   As far as embedded expressions go, there are also two acceptable
   options:
