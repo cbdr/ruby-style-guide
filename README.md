@@ -2422,7 +2422,7 @@ Translations of the guide are available in the following languages:
   hash = { one: 1, two: 2, three: 3 }
   ```
 
-* When a line exceeds our line limit, prefer to create a multi-line hash.
+* When creating a hash would exceed our line limit, prefer to create a multi-line hash.
 
   ```Ruby
   # bad
