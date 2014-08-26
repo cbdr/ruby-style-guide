@@ -208,23 +208,6 @@ Translations of the guide are available in the following languages:
   e = M * c**2
   ```
 
-  `{` and `}` deserve a bit of clarification, since they are used
-  for block and hash literals, as well as embedded expressions in
-  strings. For hash literals two styles are considered acceptable.
-
-  ```Ruby
-  # good - space after { and before }
-  { one: 1, two: 2 }
-
-  # good - no space after { and before }
-  {one: 1, two: 2}
-  ```
-
-  The first variant is slightly more readable (and arguably more
-  popular in the Ruby community in general). The second variant has
-  the advantage of adding visual difference between block and hash
-  literals. Whichever one you pick - apply it consistently.
-
   As far as embedded expressions go, there are also two acceptable
   options:
 
@@ -2414,6 +2397,53 @@ Translations of the guide are available in the following languages:
   implements a collection of unordered values with no duplicates. This
   is a hybrid of `Array`'s intuitive inter-operation facilities and
   `Hash`'s fast lookup.
+
+* Use a space before } and after { in hash literals
+
+  ```Ruby
+  # good - space after { and before }
+  { one: 1, two: 2 }
+
+  # bad - no space after { and before }
+  {one: 1, two: 2}
+  ```
+
+* Prefer one-line instead of multi-line when creating a hash.
+
+  ```Ruby
+  # bad
+  hash = {
+           one: 1,
+           two: 2,
+           three: 3
+         }
+
+  # good
+  hash = { one: 1, two: 2, three: 3 }
+  ```
+
+* When creating a hash would exceed our line limit, prefer to create a multi-line hash.
+
+  ```Ruby
+  # bad
+  hash = { one: 1, two: 2, three: 3, four: 4, five: 5, six: 6, seven: 7, eight: 8, nine: 9, ten: 10, eleven: 11, twelve: 12 }
+
+  # good
+  hash = { 
+           one: 1, two: 2, three: 3, four: 4, five: 5, six: 6, seven: 7, eight: 8, nine: 9, ten: 10, eleven: 11,
+           twelve: 12
+         }
+ ```
+
+* When hash values are more complex, prefer to create a multi-line hash.
+  ```Ruby
+  # good 
+  hash = { 
+           one: kitten.color,
+           two: kitten.breed,
+           three: number_of_kittens
+         }
+  ```
 
 * Prefer symbols instead of strings as hash keys.
 
