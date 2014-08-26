@@ -2433,21 +2433,15 @@ Translations of the guide are available in the following languages:
            one: 1, two: 2, three: 3, four: 4, five: 5, six: 6, seven: 7, eight: 8, nine: 9, ten: 10, eleven: 11,
            twelve: 12
          }
+ ```
 
+* When hash values are more complex, prefer to create a multi-line hash.
+  ```Ruby
   # good 
   hash = { 
-           one: 1,
-           two: 2,
-           three: 3,
-           four: 4,
-           five: 5,
-           six: 6,
-           seven: 7,
-           eight: 8,
-           nine: 9,
-           ten: 10,
-           eleven: 11,
-           twelve: 12
+           one: kitten.color,
+           two: kitten.breed,
+           three: number_of_kittens
          }
   ```
 
