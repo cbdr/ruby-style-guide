@@ -2398,7 +2398,7 @@ Translations of the guide are available in the following languages:
   is a hybrid of `Array`'s intuitive inter-operation facilities and
   `Hash`'s fast lookup.
 
-* User a space before } and after { in hash literals
+* Use a space before } and after { in hash literals
 
   ```Ruby
   # good - space after { and before }
