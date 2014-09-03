@@ -2398,7 +2398,7 @@ Translations of the guide are available in the following languages:
   is a hybrid of `Array`'s intuitive inter-operation facilities and
   `Hash`'s fast lookup.
 
-* be consistant with spaces before } and after { and if editing a file match the existing formatting.
+* Be consistant with spaces before } and after { and if editing a file match the existing formatting.
 
   ```Ruby
   # good - space after { and before }
