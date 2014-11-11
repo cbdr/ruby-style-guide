@@ -222,7 +222,7 @@ Translations of the guide are available in the following languages:
   The first style is extremely more popular and you're generally
   advised to stick with it. The second, on the other hand, is
   (arguably) a bit more readable. As with hashes - pick one style
-  and apply it consistently.
+  and apply it consistently. We chose no spaces (the former).
 
 * No spaces after `(`, `[` or before `]`, `)`.
 
@@ -426,7 +426,8 @@ Translations of the guide are available in the following languages:
     ```
 
   A discussion on the merits of both alternative styles can be found
-  [here](https://github.com/bbatsov/ruby-style-guide/pull/176).
+  [here](https://github.com/bbatsov/ruby-style-guide/pull/176). We chose
+  Option A.
 
 * Align the parameters of a method call if they span more than one
   line. When aligning parameters is not appropriate due to line-length
@@ -2597,7 +2598,7 @@ Translations of the guide are available in the following languages:
 
   The second style is arguably a bit more popular in the Ruby
   community. The string literals in this guide, however, are
-  aligned with the first style.
+  aligned with the first style. We chose Option A.
 
 * Don't use the character literal syntax `?x`. Since Ruby 1.9 it's
   basically redundant - `?x` would interpreted as `'x'` (a string with
