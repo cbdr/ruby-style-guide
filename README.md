@@ -208,21 +208,15 @@ Translations of the guide are available in the following languages:
   e = M * c**2
   ```
 
-  As far as embedded expressions go, there are also two acceptable
-  options:
+  For embedded expressions go:
 
   ```Ruby
   # good - no spaces
   "string#{expr}"
-
-  # ok - arguably more readable
-  "string#{ expr }"
   ```
 
   The first style is extremely more popular and you're generally
-  advised to stick with it. The second, on the other hand, is
-  (arguably) a bit more readable. As with hashes - pick one style
-  and apply it consistently.
+  advised to stick with it.
 
 * No spaces after `(`, `[` or before `]`, `)`.
 
@@ -394,36 +388,19 @@ Translations of the guide are available in the following languages:
                 ' and second part of the long string'
   ```
 
-* Adopt a consistent multi-line method chaining style. There are two
-  popular styles in the Ruby community, both of which are considered
-  good - leading `.` (Option A) and trailing `.` (Option B).
+* Adopt a consistent multi-line method chaining style. When continuing
+  a chained method invocation on another line keep the `.` on the
+  second line.
 
-  * **(Option A)** When continuing a chained method invocation on
-    another line keep the `.` on the second line.
+  ```Ruby
+  # bad - need to consult first line to understand second line
+  one.two.three.
+    four
 
-    ```Ruby
-    # bad - need to consult first line to understand second line
-    one.two.three.
-      four
-
-    # good - it's immediately clear what's going on the second line
-    one.two.three
-      .four
-    ```
-
-  * **(Option B)** When continuing a chained method invocation on another line,
-    include the `.` on the first line to indicate that the
-    expression continues.
-
-    ```Ruby
-    # bad - need to read ahead to the second line to know that the chain continues
-    one.two.three
-      .four
-
-    # good - it's immediately clear that the expression continues beyond the first line
-    one.two.three.
-      four
-    ```
+  # good - it's immediately clear what's going on the second line
+  one.two.three
+    .four
+  ```
 
   A discussion on the merits of both alternative styles can be found
   [here](https://github.com/bbatsov/ruby-style-guide/pull/176).
@@ -2570,34 +2547,21 @@ Translations of the guide are available in the following languages:
 
 * Adopt a consistent string literal quoting style. There are two
   popular styles in the Ruby community, both of which are considered
-  good - single quotes by default (Option A) and double quotes by default (Option B).
+  good.
 
-  * **(Option A)** Prefer single-quoted strings when you don't need
-    string interpolation or special symbols such as `\t`, `\n`, `'`,
-    etc.
+  Prefer single-quoted strings when you don't need
+  string interpolation or special symbols such as `\t`, `\n`, `'`,
+  etc.
 
-    ```Ruby
-    # bad
-    name = "Bozhidar"
+  ```Ruby
+  # bad
+  name = "Bozhidar"
 
-    # good
-    name = 'Bozhidar'
-    ```
+  # good
+  name = 'Bozhidar'
+  ```
 
-  * **(Option B)** Prefer double-quotes unless your string literal
-    contains `"` or escape characters you want to suppress.
-
-    ```Ruby
-    # bad
-    name = 'Bozhidar'
-
-    # good
-    name = "Bozhidar"
-    ```
-
-  The second style is arguably a bit more popular in the Ruby
-  community. The string literals in this guide, however, are
-  aligned with the first style.
+  The string literals in this guide are aligned with the first style.
 
 * Don't use the character literal syntax `?x`. Since Ruby 1.9 it's
   basically redundant - `?x` would interpreted as `'x'` (a string with
