@@ -7,3 +7,6 @@ LineLength:
 
 CommentAnnotation:
   Enabled: false
+
+Documentation:
+  Enabled: false
