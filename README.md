@@ -547,9 +547,9 @@ Translations of the guide are available in the following languages:
     empty line between the comment block and the `def`.
 <sup>[[link](#rdoc-conventions)]</sup>
 
-* <a name="80-character-limits"></a>
-  Limit lines to 80 characters.
-<sup>[[link](#80-character-limits)]</sup>
+* <a name="120-character-limits"></a>
+  Limit lines to 120 characters.
+<sup>[[link](#120-character-limits)]</sup>
 
 * <a name="no-trailing-whitespace"></a>
   Avoid trailing whitespace.
