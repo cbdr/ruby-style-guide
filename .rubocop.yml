@@ -3,10 +3,22 @@ Encoding:
   Enabled: false
 
 LineLength:
-  Max: 120
+  Max: 200
 
 CommentAnnotation:
   Enabled: false
 
 Documentation:
   Enabled: false
+
+Style/SpaceInsideStringInterpolation:
+  EnforcedStyle: space
+
+Style/NumericPredicate:
+  Enabled: false
+
+Metrics/MethodLength:
+  Max: 15
+
+Metrics/AbcSize:
+  Max: 20
